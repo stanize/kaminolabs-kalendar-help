@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "App",
-  description: "Built with kaminolabs template",
+  description: "Built with kaminolabs template!!!",
 };
 
 export default function RootLayout({
