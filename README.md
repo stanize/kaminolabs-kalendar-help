@@ -1,27 +1,30 @@
-# kaminolabs Next.js Template
+# Kalendar Help Center
 
-A minimal Next.js starter template with TypeScript, Tailwind CSS, ESLint, and Prettier.
+Static, bilingual (Spanish/English) help portal for [Kalendar](https://kalendar.kaminolabs.dev), deployed separately at `help-kalendar.kaminolabs.dev`.
 
 ## Stack
 
-- [Next.js 15](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
+- Next.js 15 (App Router) + TypeScript + Tailwind CSS
+- Content authored as Markdown/MDX files under `content/<locale>/<slug>.mdx`, rendered at build time with `remark`
+- No database, no auth — fully static, deployable to Vercel as-is
 
-## Getting Started
+## Structure
+
+- `content/es/*.mdx`, `content/en/*.mdx` — one article per language, matched by filename (slug)
+- `src/lib/articles.ts` — canonical list of article slugs
+- `src/lib/mdx.ts` — reads and compiles article Markdown + frontmatter
+- `src/app/[locale]/page.tsx` — article index with search
+- `src/app/[locale]/[slug]/page.tsx` — individual article page
+- `src/components/` — sidebar nav, search bar, language switcher
+
+## Adding an article
+
+1. Add the slug to `ARTICLE_SLUGS` in `src/lib/articles.ts`.
+2. Create `content/es/<slug>.mdx` and `content/en/<slug>.mdx` with frontmatter (`title`, `description`, `order`) and Markdown body.
+
+## Development
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Scripts
-
-- `npm run dev` — start dev server
-- `npm run build` — build for production
-- `npm run start` — start production server
-- `npm run lint` — run ESLint
-- `npm run format` — run Prettier

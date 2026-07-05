@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "Built with kaminolabs template!!!",
+  title: "Kalendar Help Center",
+  description: "Help articles for the Kalendar appointment booking platform.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="es">
+      <body className="min-h-screen bg-canvas font-sans text-ink antialiased">{children}</body>
     </html>
   );
 }
