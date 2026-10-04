@@ -10,7 +10,9 @@ export const ARTICLE_SLUGS = [
   "availability",
   "calendar",
   "clients",
+  "bonos",
   "booking-page",
+  "whatsapp",
   "support",
 ] as const;
 

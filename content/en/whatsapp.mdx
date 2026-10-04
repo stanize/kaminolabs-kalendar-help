@@ -1,0 +1,45 @@
+---
+title: "WhatsApp"
+description: "Let your clients book an appointment by chatting with your business's WhatsApp number."
+order: 10
+---
+
+WhatsApp booking is an extra front door onto the same Kalendar booking system: your clients can book an appointment by chatting directly with your business's WhatsApp number, without going through your public page.
+
+## What you need before turning it on
+
+WhatsApp booking uses your own Twilio account (you don't need this for Kalendar in general, only for this feature):
+
+1. Create a Twilio account and get a WhatsApp-enabled number.
+2. From your Twilio console, copy your **Account SID** and **Auth Token**.
+
+## Setting up your WhatsApp
+
+Go to **Your business** and look for the **WhatsApp booking** section:
+
+- **Enable WhatsApp booking** — the main toggle.
+- **Twilio Account SID** and **Twilio Auth Token** — paste the values from your Twilio console. If you already have an Auth Token saved, you can leave this field blank when editing to keep it as is.
+- **WhatsApp number** — the Twilio number your clients will use, in international format (e.g. `+34600000000`).
+
+The system automatically detects whether your number is in **sandbox mode (testing)** or **production mode**, based on the type of number — it's not something you set manually. In sandbox mode, each client needs to join Twilio's test environment first before they can chat with you; in production, anyone can message you directly.
+
+Click **Save configuration** to apply the changes.
+
+## How a client books via WhatsApp
+
+When a client messages your WhatsApp number for the first time, the conversation walks them through it step by step:
+
+1. Choose a **service** from a list.
+2. Choose an available **date**.
+3. Choose an available **time** for that date and service.
+4. Confirm or cancel with a button tap — confirming creates the appointment just like any other booking (confirmed instantly).
+
+If someone else books that exact slot right before your client confirms, they're notified and offered updated times, same as on your booking page.
+
+## WhatsApp confirmations on appointments you create
+
+When you create or edit an appointment manually from Calendar (see the **Calendar** guide), you'll see a **Send confirmation via WhatsApp** option alongside the email one, as long as you have WhatsApp booking enabled and the client has a phone number on file.
+
+## Next up
+
+Check out **Calendar** to see how you manage appointments, whether they come from your booking page or from WhatsApp.

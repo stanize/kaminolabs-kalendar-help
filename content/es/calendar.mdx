@@ -1,31 +1,64 @@
 ---
 title: "Calendario"
-description: "Consulta y gestiona las reservas de tus clientes."
+description: "Consulta y gestiona las reservas de tus clientes, crea citas manualmente y revisa cancelaciones."
 order: 6
 ---
 
-**Calendario** es donde ves todas las reservas que llegan desde tu página pública, organizadas por día (Hoy, Mañana, y fechas siguientes).
+**Calendario** es donde ves todas las reservas que llegan desde tu página pública, además de poder crear citas tú mismo y revisar cancelaciones solicitadas por clientes.
 
-## Las dos pestañas
+## Las pestañas
 
-- **Próximas** — todas tus citas confirmadas que están por venir.
-- **Pendientes** — reservas hechas por clientes que aún no tienen cuenta (reservas como invitado) y que están esperando tu confirmación. Verás un contador con el número de pendientes.
+- **Semana** — vista de cuadrícula semanal (también disponible en Día o Mes) con todas las citas de tu equipo. Aquí puedes crear citas manualmente.
+- **Próximas** — lista de tus citas confirmadas que están por venir, agrupadas por día (Hoy, Mañana, y fechas siguientes).
+- **Clientes** — reservas de clientes nuevos o que reservaron como invitado, con un contador de cuántas tienes.
+- **Cancelaciones** — solicitudes de cancelación enviadas por tus clientes desde su propio portal, pendientes de tu aprobación.
+- **Conflictos** — citas ya existentes que ahora coinciden con un festivo o una ausencia que has añadido después.
 
-## Reservas confirmadas vs. pendientes
+## Reservas confirmadas al instante
 
-Cuando un cliente reserva habiendo iniciado sesión (con su cuenta de cliente), la cita queda **confirmada** al instante. Cuando reserva como invitado sin crear cuenta, la cita queda **pendiente de confirmación** durante 24 horas: la revisas tú y decides si confirmarla.
+Todas las reservas de clientes —tanto si inician sesión con una cuenta como si reservan como invitado— quedan **confirmadas al instante** en cuanto se envían. Ya no existe una ventana de revisión de 24 horas: la cita aparece directamente en tu Próximas y en la vista semanal.
 
-Las reservas pendientes muestran cuánto tiempo les queda antes de caducar. Si no se confirman a tiempo, caducan automáticamente.
+Lo que sí cambia según cómo reserve el cliente es la pestaña **Clientes**: ahí aparecen las reservas de invitados y de clientes que reservan contigo por primera vez, con el botón **Contactado / Confirmado** para marcar que ya les has llamado o escrito para confirmar los detalles en persona, algo que algunos negocios hacen como paso adicional aunque la reserva ya esté confirmada en el sistema. Usa el filtro **Todos** para ver solo cierto tipo de cliente si lo necesitas.
 
-## Acciones disponibles
+## Crear una cita manualmente
 
-- **Confirmar** una reserva pendiente para aceptarla definitivamente.
-- **Cancelar** cualquier reserva, confirmada o pendiente. Al cancelar, se avisa automáticamente al cliente por email.
+Si un cliente te llama o viene sin haber reservado online, puedes añadir la cita tú mismo:
+
+1. Ve a la pestaña **Semana** y pulsa **Añadir cita** sobre un hueco libre (o el botón correspondiente en la vista).
+2. En el formulario **Nueva cita**, elige el **Servicio** y, si trabajas en equipo, el **Profesional**.
+3. Ajusta la **Fecha** y la **Hora** si no son las del hueco que pulsaste. Si la hora cae fuera de tu horario laboral, verás un aviso ("Fuera de horario laboral"), pero puedes crear la cita igualmente.
+4. Si el hueco coincide con un festivo o una ausencia del equipo, verás un aviso con el nombre de esa cerrazón — también puedes seguir adelante si lo necesitas.
+5. Indica el **Nombre del cliente** (obligatorio) y, opcionalmente, su **Email** y **Teléfono**.
+6. Añade **Comentarios** internos si quieres dejar notas sobre la cita.
+7. Marca **Enviar confirmación por email** y/o **Enviar confirmación por WhatsApp** (esta última solo aparece si tienes activadas las reservas por WhatsApp — ver la guía **WhatsApp**) si quieres que el cliente reciba un aviso.
+8. Pulsa **Crear cita**.
+
+Para modificar una cita ya creada, ábrela y pulsa **Modificar** — el formulario es el mismo, con el título "Modificar cita" y el botón **Guardar cambios**.
+
+## Citas pasadas: resultado y pago
+
+Al abrir una cita que ya ha pasado, puedes registrar cómo fue:
+
+- **Resultado** — marca la cita como Completada, No-show o Cancelada.
+- **Pago** — marca si está Pagado o Pendiente. Al elegir Pagado, selecciona el **Método de pago**: Efectivo, Tarjeta, o uno de los bonos activos del cliente (si tiene alguno — ver la guía **Bonos**). Si el pago ya está aplicado a un bono, el selector queda bloqueado; para cambiarlo, ve a la página de Bonos.
+
+## Cancelaciones
+
+Cuando un cliente con cuenta solicita cancelar su cita desde su propio portal, la solicitud aparece en la pestaña **Cancelaciones** con la etiqueta "Cancelación solicitada", en vez de cancelarse automáticamente. Desde aquí puedes:
+
+- **Aprobar** — confirma la cancelación; se avisa al cliente por email.
+- **Denegar** — rechaza la solicitud y la cita se mantiene como estaba.
+
+Puedes cancelar cualquier cita directamente tú también (confirmada o no), sin pasar por esta pestaña, abriendo la cita y pulsando **Cancelar cita**.
+
+## Conflictos
+
+Si añades un festivo o una ausencia de equipo (ver **Disponibilidad**) y ya tenías citas programadas en ese hueco, aparecerán en la pestaña **Conflictos** con el festivo o ausencia con el que coinciden, para que decidas si las reprogramas o las dejas igual.
 
 ## Notificaciones automáticas
 
-Cada vez que entra una reserva nueva, recibes un email de aviso. Tus clientes también reciben confirmación por email de sus citas, y un email si tú cancelas alguna.
+Cada vez que entra una reserva nueva, recibes un email de aviso. Tus clientes también reciben confirmación por email de sus citas, y un email si cancelas alguna.
 
 ## Siguiente paso
 
-Lee **Clientes** para entender la diferencia entre reservas de invitado y cuentas de cliente.
+Lee **Clientes** para ver cómo gestionar tu listado de clientes, su historial y sus notas privadas.

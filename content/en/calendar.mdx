@@ -1,26 +1,59 @@
 ---
 title: "Calendar"
-description: "View and manage your clients' bookings."
+description: "View and manage your clients' bookings, create appointments manually, and review cancellations."
 order: 6
 ---
 
-**Calendar** is where you see every booking coming in from your public page, grouped by day (Today, Tomorrow, and following dates).
+**Calendar** is where you see every booking coming in from your public page, plus where you can create appointments yourself and review cancellation requests from clients.
 
-## The two tabs
+## The tabs
 
-- **Upcoming** — all your confirmed appointments that are coming up.
-- **Pending** — bookings made by clients who don't have an account yet (guest bookings) and are waiting for your confirmation. You'll see a counter with the number of pending bookings.
+- **Week** — a weekly grid view (Day and Month views are also available) showing every appointment across your team. This is where you create appointments manually.
+- **Upcoming** — a list of your confirmed appointments that are coming up, grouped by day (Today, Tomorrow, and following dates).
+- **Clients** — bookings from new or guest clients, with a counter showing how many you have.
+- **Cancellations** — cancellation requests sent by clients from their own portal, waiting for your approval.
+- **Conflicts** — existing appointments that now overlap with a holiday or time off you've added afterward.
 
-## Confirmed vs. pending bookings
+## Bookings are confirmed instantly
 
-When a client books while signed in with a client account, the appointment is **confirmed** instantly. When they book as a guest without creating an account, the appointment stays **pending confirmation** for 24 hours: you review it and decide whether to confirm it.
+Every client booking — whether they're signed in with an account or booking as a guest — is **confirmed instantly** as soon as it's submitted. There's no more 24-hour review window: the appointment shows up right away in Upcoming and in the week view.
 
-Pending bookings show how much time is left before they expire. If they aren't confirmed in time, they expire automatically.
+What does change depending on how the client booked is the **Clients** tab: that's where bookings from guests and from clients booking with you for the first time show up, with a **Contacted / Confirmed** button to mark that you've already called or messaged them to confirm the details in person — something some businesses do as an extra step even though the booking is already confirmed in the system. Use the **All** filter if you only want to see a certain type of client.
 
-## Available actions
+## Creating an appointment manually
 
-- **Confirm** a pending booking to accept it for good.
-- **Cancel** any booking, confirmed or pending. Cancelling automatically notifies the client by email.
+If a client calls you or walks in without having booked online, you can add the appointment yourself:
+
+1. Go to the **Week** tab and click **Add appointment** on an open slot (or the equivalent button in the view).
+2. In the **New appointment** form, choose the **Service** and, if you work as a team, the **Provider**.
+3. Adjust the **Date** and **Time** if they're different from the slot you clicked. If the time falls outside your working hours, you'll see a note ("Outside business hours"), but you can still create the appointment.
+4. If the slot overlaps a holiday or team time off, you'll see a note naming that closure — you can still proceed if needed.
+5. Enter the **Client name** (required) and, optionally, their **Email** and **Phone**.
+6. Add internal **Comments** if you want to leave notes about the appointment.
+7. Check **Send confirmation email** and/or **Send confirmation via WhatsApp** (this one only shows up if you have WhatsApp booking enabled — see the **WhatsApp** guide) if you want the client to get notified.
+8. Click **Create appointment**.
+
+To edit an existing appointment, open it and click **Modify** — it's the same form, titled "Modify appointment" with a **Save changes** button.
+
+## Past appointments: result and payment
+
+Opening an appointment that's already happened lets you record how it went:
+
+- **Result** — mark it as Completed, No-show, or Cancelled.
+- **Payment** — mark it as Paid or Pending. Choosing Paid lets you pick the **Payment method**: Cash, Card, or one of the client's active bonos (if they have any — see the **Bonos** guide). If the payment is already applied to a bono, the selector is locked; to change it, go to the Bonos page.
+
+## Cancellations
+
+When a client with an account requests to cancel their appointment from their own portal, the request shows up in the **Cancellations** tab with a "Cancellation requested" badge, instead of being cancelled automatically. From there you can:
+
+- **Approve** — confirms the cancellation; the client is notified by email.
+- **Deny** — rejects the request and the appointment stays as it was.
+
+You can also cancel any appointment directly yourself (confirmed or not) without going through this tab, by opening it and clicking **Cancel appointment**.
+
+## Conflicts
+
+If you add a holiday or team time off (see **Availability**) and you already had appointments scheduled in that slot, they'll show up in the **Conflicts** tab along with the holiday or time off they overlap, so you can decide whether to reschedule them or leave them as is.
 
 ## Automatic notifications
 
@@ -28,4 +61,4 @@ Every time a new booking comes in, you get an email alert. Your clients also get
 
 ## Next up
 
-Read **Clients** to understand the difference between guest bookings and client accounts.
+Read **Clients** to see how to manage your client list, their history, and private notes.

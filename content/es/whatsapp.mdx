@@ -1,0 +1,45 @@
+---
+title: "WhatsApp"
+description: "Deja que tus clientes reserven cita chateando con el WhatsApp de tu negocio."
+order: 10
+---
+
+Las reservas por WhatsApp son una puerta de entrada adicional al mismo sistema de reservas de Kalendar: tus clientes pueden reservar cita chateando directamente con el número de WhatsApp de tu negocio, sin pasar por tu página pública.
+
+## Qué necesitas antes de activarlo
+
+Las reservas por WhatsApp usan tu propia cuenta de Twilio (no es necesario para usar Kalendar en general, solo para esta función):
+
+1. Crea una cuenta en Twilio y consigue un número habilitado para WhatsApp.
+2. Desde tu consola de Twilio, copia tu **Account SID** y tu **Auth Token**.
+
+## Configurar tu WhatsApp
+
+Ve a **Tu negocio** y busca la sección **Reservas por WhatsApp**:
+
+- **Activar reservas por WhatsApp** — el interruptor principal.
+- **Account SID de Twilio** y **Auth Token de Twilio** — pega los valores de tu consola de Twilio. Si ya tienes un Auth Token guardado, puedes dejar el campo en blanco al editar para mantenerlo tal cual.
+- **Número de WhatsApp** — el número de Twilio que usarán tus clientes, en formato internacional (por ejemplo, `+34600000000`).
+
+El sistema detecta automáticamente si tu número está en **modo sandbox (pruebas)** o en **modo producción**, según el tipo de número — no es algo que configures tú manualmente. En modo sandbox, cada cliente necesita unirse primero al entorno de pruebas de Twilio antes de poder chatear contigo; en producción, cualquiera puede escribirte directamente.
+
+Pulsa **Guardar configuración** para aplicar los cambios.
+
+## Cómo reserva un cliente por WhatsApp
+
+Cuando un cliente escribe por primera vez a tu número de WhatsApp, la conversación le guía paso a paso:
+
+1. Elige un **servicio** de una lista.
+2. Elige una **fecha** disponible.
+3. Elige una **hora** disponible para esa fecha y servicio.
+4. Confirma o cancela con un botón — al confirmar, la cita se crea igual que cualquier otra reserva (confirmada al instante).
+
+Si alguien más reserva ese mismo hueco justo antes de que tu cliente confirme, se le avisa y se le ofrecen horarios actualizados, igual que en tu página de reservas.
+
+## Confirmaciones por WhatsApp en citas creadas por ti
+
+Cuando creas o modificas una cita manualmente desde el Calendario (ver la guía **Calendario**), verás la opción **Enviar confirmación por WhatsApp** junto a la de email, siempre que tengas activadas las reservas por WhatsApp y el cliente tenga un teléfono indicado.
+
+## Siguiente paso
+
+Consulta **Calendario** para ver cómo gestionas las citas, vengan de tu página de reservas o de WhatsApp.
