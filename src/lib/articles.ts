@@ -11,6 +11,7 @@ export const ARTICLE_SLUGS = [
   "calendar",
   "clients",
   "bonos",
+  "invoicing",
   "booking-page",
   "whatsapp",
   "support",
